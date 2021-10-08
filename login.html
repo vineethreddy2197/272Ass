@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function loginForm() {
+            document.myform.submit();
+            document.myform.action = "users.php";
+        }
+    </script>
+    <script>
+        $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loginform()">
+<!-- <form action="users.php" name="myform" method="post">
+        <input type="text" name="USERNAME" > USERNAME </input>
+        <input type="password" name="PASSWORD"> PASSWORD </input>
+        <input type="submit" value="Login">
+    </form> -->
+    <div class="login-page">
+        <div class="form">
+          <form class="login-form" action="users.php" name="myform" method="post">
+            <input type="text" placeholder="username" name="USERNAME" />
+            <input type="password" placeholder="password" name="PASSWORD"/>
+            <button value="Login">login</button>
+          </form>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
